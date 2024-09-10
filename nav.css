@@ -1,0 +1,98 @@
+body{
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    grid-template-rows: 70px 1fr;
+    grid-template-areas: 
+        "side header"
+        "side main";
+}
+
+.header{
+    background-color:gainsboro;
+    grid-area: header;
+    display: flex;
+    padding: 0 20px;
+    align-items: center;
+}
+.header a{
+    text-decoration: none; 
+    color: inherit;  
+}
+
+
+.left-txt {
+    margin-left: 20px;
+    color:#333;
+}
+
+.logout{
+    margin-left: auto;
+    margin-right: 20px;
+    text-align: center;
+    cursor: pointer;
+    font-size: large;
+    width: 120px; 
+    height: 40px; 
+    display: flex; 
+    align-items: center; 
+    justify-content : center; 
+
+    border-radius: 30px;
+    border-width: 50px; 
+    border: 0.5px  antiquewhite;
+    background-color: antiquewhite;
+    border-spacing: 10px;
+    
+
+}
+
+.logout:hover {
+    background-color: rgb(236, 194, 166);
+}
+
+
+.sidebar{
+    background-color: antiquewhite;
+    grid-area: side;
+
+}
+.logo-link img {
+    max-width: 250px; 
+    height: 250; /* Maintain the aspect ratio */
+    margin-left: 32px;
+    margin-top: 7px;
+
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    margin-top: 5vh;
+
+}
+.menu a {
+    font-size: x-large;
+    color: #333; 
+    text-decoration: none; 
+    padding: 15px 20px;
+    display: flex; 
+    align-items: center; 
+    border-radius: 5px; 
+    margin-bottom: 10px; 
+}
+
+
+.menu a:hover {
+    background-color: #f0f0f0; 
+}
+
+.menu i {
+    margin-right: 10px; 
+}
+
+

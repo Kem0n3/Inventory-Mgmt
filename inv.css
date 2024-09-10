@@ -1,0 +1,49 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    grid-template-rows: 70px 1fr;
+    grid-template-areas: 
+        "side header"
+        "side main";
+}
+
+.main {
+    background-color: grey;
+    grid-area: main;
+    padding: 15px;
+    
+}
+
+.card {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 10px;
+    height: 85vh;
+}
+
+.card h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
